@@ -1,19 +1,67 @@
+
 # caalamitaas
+
 # Update and upgrade all existing system packages
+```bash
 pkg update && pkg upgrade -y
+```
 
 # Install the Python interpreter
+```bash
 pkg install python -y
+```
 
 # Verify that Python installed successfully and check the version
+```bash
 python --version
+```
+
 # 'w' stands for write mode. This creates the file if it doesn't exist.
+```python
 with open("log.txt", "w") as file:
     file.write("DevOps System Log: Script executed successfully on Termux!\n")
     file.write("Status: Active and learning.\n")
 
 print("File 'log.txt' has been automatically created and written to!")
+```
 
+# Linux, Python and DevOps Reference
+
+## 1. Directory Navigation and File Management
+```bash
+# Print Working Directory
+pwd
+
+# List contents of current folder
+ls
+
+# List all files including hidden files
+ls -a
+
+# Move into a specific folder
+cd folder_name
+
+# Go back one folder level up
+cd ..
+
+# Go back to home directory
+cd ~
+
+# Create a new folder
+mkdir new_folder_name
+
+# Delete an empty folder
+rmdir folder_name
+
+# Delete a file permanently
+rm file_name.py
+
+# Force delete a folder and everything inside it
+rm -rf folder_name
+
+# Clear your terminal screen
+clear
+```
 # Linux, Python and DevOps Reference
 
 ## 1. Directory Navigation and File Management
